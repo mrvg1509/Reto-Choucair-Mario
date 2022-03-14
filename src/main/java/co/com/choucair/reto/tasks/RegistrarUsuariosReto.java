@@ -1,10 +1,13 @@
 package co.com.choucair.reto.tasks;
 
+import co.com.choucair.reto.model.DatosUtest;
 import co.com.choucair.reto.userinterfaces.*;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.SendKeys;
+
+import java.util.List;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
@@ -15,7 +18,7 @@ public class RegistrarUsuariosReto implements Task {
             Click.on(Home.REGISTRAR),
             SendKeys.of("Estefania").into(Personal.FIRSTNAME),
             SendKeys.of("Batista").into(Personal.LASTNAME),
-            SendKeys.of("EstefaniaBatista@gmail.com").into(Personal.EMAIL),
+            SendKeys.of("EstefaniaBatista15@gmail.com").into(Personal.EMAIL),
             SendKeys.of("June").into(Personal.MONTH),
             SendKeys.of("1").into(Personal.DAY),
             SendKeys.of("2000").into(Personal.YEAR),
@@ -38,7 +41,7 @@ public class RegistrarUsuariosReto implements Task {
     );
     }
 
-    public static RegistrarUsuariosReto RealizarInfo(){
+    public static RegistrarUsuariosReto RealizarInfo(List<DatosUtest> datos){
         return instrumented(RegistrarUsuariosReto.class);
     }
 
