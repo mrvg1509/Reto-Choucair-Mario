@@ -18,7 +18,7 @@ public class RegistrarUsuariosReto implements Task {
             Click.on(Home.REGISTRAR),
             SendKeys.of("Estefania").into(Personal.FIRSTNAME),
             SendKeys.of("Batista").into(Personal.LASTNAME),
-            SendKeys.of("EstefaniaBatista15@gmail.com").into(Personal.EMAIL),
+            SendKeys.of("EstefaniaBatista23@gmail.com").into(Personal.EMAIL),
             SendKeys.of("June").into(Personal.MONTH),
             SendKeys.of("1").into(Personal.DAY),
             SendKeys.of("2000").into(Personal.YEAR),

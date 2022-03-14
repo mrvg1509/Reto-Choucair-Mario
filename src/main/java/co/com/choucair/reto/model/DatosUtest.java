@@ -7,6 +7,25 @@ public class DatosUtest {
     private String strMesNacmiento;
     private String strDiaNacmiento;
     private String strAnioNacmiento;
+    private String strcode;
+    private String strpassword;
+    private String strconfirmpassword;
+
+    public String getStrpassword() {
+        return strpassword;
+    }
+
+    public void setStrpassword(String strpassword) {
+        this.strpassword = strpassword;
+    }
+
+    public String getStrconfirmpassword() {
+        return strconfirmpassword;
+    }
+
+    public void setStrconfirmpassword(String strconfirmpassword) {
+        this.strconfirmpassword = strconfirmpassword;
+    }
 
     public String getStrApellido() {
         return strApellido;
@@ -14,6 +33,14 @@ public class DatosUtest {
 
     public void setStrApellido(String strApellido) {
         this.strApellido = strApellido;
+    }
+
+    public String getStrcode() {
+        return strcode;
+    }
+
+    public void setStrcode(String strcode) {
+        this.strcode = strcode;
     }
 
     public String getStrEmail() {

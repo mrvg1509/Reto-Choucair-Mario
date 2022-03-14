@@ -5,8 +5,8 @@ Feature: I as  new intregrante for the Utest i want to create a new register to 
   Scenario: creation complete of users congratulation
     Given user open home page
     When user create account filling all fields
-      | strNombre | strApellido | strEmail                     |strMesNacmiento | strDiaNacmiento | strAnioNacmiento |
-      | Estefania | Batista     | EstefaniaBatista15@gmail.com |June            | 1               | 2000             |
+      | strNombre | strApellido | strEmail                     |strMesNacmiento | strDiaNacmiento | strAnioNacmiento | strcode  | strpassword | strconfirmpassword|
+      | Estefania | Batista     | EstefaniaBatista23@gmail.com |June            | 1               | 2000            |    507   | Estefania1234*| Estefania1234*|
 
 
     Then user sees its username
