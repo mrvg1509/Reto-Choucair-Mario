@@ -1,4 +1,5 @@
 package co.com.choucair.reto.stepdefinitions;
+import co.com.choucair.reto.model.DatosUtest;
 import co.com.choucair.reto.tasks.RegistrarUsuariosReto;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -9,6 +10,9 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
+
+import java.util.List;
+
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 
@@ -29,8 +33,8 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
     }
 
     @When("^user create account filling all fields$")
-    public void userCreateAccountFillingAllFields() {
-    theActorInTheSpotlight().attemptsTo(RegistrarUsuariosReto.RealizarInfo());
+    public void userCreateAccountFillingAllFields(List<DatosUtest>datos) {
+    theActorInTheSpotlight().attemptsTo(RegistrarUsuariosReto.RealizarInfo(datos));
     }
 
     @Then("^user sees its username$")
